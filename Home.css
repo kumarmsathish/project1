@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto',sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-image: url("https://freshmeal.com/cdn/shop/files/Banner_1_copy_x800.jpg?v=1687550482");
+}
+header{
+   
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+   
+}
+.logo img{
+    max-width: 180px;
+    height: auto;
+    padding-left: 40px;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    padding: 10px 20px;
+    color: #292929;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: #cc3333;
+    text-decoration: underline;
+
+
+}
+
+
+
+.nav-icon{
+    display: inline-flexbox;
+    align-items: center;
+}
+.nav-icon .btn{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #cc3333;
+    padding: 10px 30px;
+    background-color: #cc3333;
+    border-radius: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-right: 300px;
+    transition: all .42s ease;
+}
+.nav-icon .btn:hover{
+    transform: scale(1.1);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #292929;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+    
+}
+section{
+    padding: 30px 10%;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+
+
+.home-text h4{
+    color: #cc3333;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-family: 'lobster',cursive;
+    margin-top: 2%;
+
+}
+.home-text h1{
+    font-size: 30px;
+    color: #292929;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 23px 0;
+}
+.home-text h1 span{
+    color: #cc3333;
+    text-decoration: underline;
+}
+.home-text p{
+    color: #666;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.main-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-btn .btn1{
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: #cc3333;
+    padding: 12px 30px;
+    transition: all .42s ease;
+    border-radius: 20px;
+}
+.main-btn .btn1:hover{
+    background-color: #292929;
+}
+/* Responsive design */
+@media(max-width:945px){
+    header{
+        padding:10px 3%;
+        transition: .3s;
+    }
+}
+@media(max-width:1140px){
+    .home{
+        grid-template-columns: 1fr;
+        
+    }
+}
